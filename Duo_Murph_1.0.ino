@@ -7,13 +7,12 @@ void setup()
   }
   Serial.begin(9600);
 }
-
 void loop() 
 {
   
 }
 
-public void hBrigeWrite (char motor, int motorDirection) 
+public hBrigeWrite (char motor, int motorDirection) 
 {
   if (motor == 'A')
   {
@@ -66,8 +65,7 @@ public void hBrigeWrite (char motor, int motorDirection)
     Serial.println("ERR_INVALID_MOTOR");
   }
 }
-
-public void driveForward (char driveDirection)
+public driveForward (char driveDirection)
 {
   switch (driveDirection) 
   {
@@ -92,8 +90,7 @@ public void driveForward (char driveDirection)
       break;
   }
 }
-
-public void driveBackward (char driveDirection)
+public driveBackward (char driveDirection)
 {
   switch (driveDirection) 
   {
@@ -118,8 +115,7 @@ public void driveBackward (char driveDirection)
       break;
   }
 }
-
-public void turnOnSpot (char turnDirection)
+public turnOnSpot (char turnDirection)
 {
   switch (turnDirection)
   {
